@@ -2,10 +2,143 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>我的個人網站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的學習筆記 | My Learning Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2d3436;
+            --accent-color: #0984e3;
+            --bg-color: #f5f6fa;
+            --card-bg: #ffffff;
+            --text-color: #2d3436;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6c5ce7, #0984e3);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: -2rem auto 3rem;
+            padding: 0 1rem;
+        }
+
+        .note-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+
+        .note-header {
+            border-left: 5px solid var(--accent-color);
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 { margin: 0; font-size: 2rem; }
+        h2 { margin: 0; color: var(--accent-color); }
+        
+        .date {
+            font-size: 0.9rem;
+            color: #636e72;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        .content {
+            white-space: pre-wrap; /* 保留換行 */
+        }
+
+        /* 這裡是你以後增加筆記的地方 */
+        .badge {
+            display: inline-block;
+            background: #dfe6e9;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #b2bec3;
+            font-size: 0.8rem;
+        }
+
+        /* 按鈕樣式，雖然現在沒功能但留給你擴充 */
+        .edit-btn {
+            background: none;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .edit-btn:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>哈囉！歡迎來到我的 GitHub 個人網站！</h1>
-    <p>這是用 GitHub Pages 建立的網頁。</p>
+
+<header>
+    <h1>📓 課堂學習筆記</h1>
+    <p>記錄每一次進步的足跡</p>
+</header>
+
+<div class="container">
+    
+    <div class="note-card">
+        <div class="note-header">
+            <span class="badge">網頁設計</span>
+            <h2>第一堂課：GitHub Pages 架站初體驗</h2>
+            <span class="date">📅 2024年 5月 27日</span>
+        </div>
+        <div class="content">
+            今日重點：
+            1. 建立 [帳號].github.io 的 Repo。
+            2. 了解 index.html 是網站的主入口。
+            3. 學習如何使用 CSS 讓網頁變漂亮。
+            
+            心得：
+            原來架設一個屬於自己的網站這麼簡單，完全不需要花錢買伺服器！
+        </div>
+    </div>
+    <div class="note-card" style="opacity: 0.7;">
+        <div class="note-header">
+            <span class="badge">待更新</span>
+            <h2>第二堂課：尚未開始...</h2>
+            <span class="date">📅 預計日期：未定</span>
+        </div>
+        <div class="content">
+            點擊 GitHub 上的編輯按鈕，把這段文字換成你的新筆記吧！
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2024 Created by My GitHub Pages
+</footer>
+
 </body>
 </html>
